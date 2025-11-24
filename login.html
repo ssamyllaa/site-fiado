@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login- controle de fiados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1> Controlw de fiados</h1>
+    <input type="password" id="senha" placeholder="digite sua senha">
+    <button onclick="entrar()">Entrar</button>
+</div>
+<script>
+    function entrar() {
+        const senha = document.getElementById("senha").value;
+        if(senha === "1234") <!--senha pode ser alterada depois-->{
+            window.location.href = "index.html";
+        } else{
+            alert("senha incorreta!");
+        }
+    }
+</script>  
+</body>
+</html>
